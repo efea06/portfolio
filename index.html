@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Efe Ahworegba | Cybersecurity student and fintech founder</title>
+  <meta name="description" content="Portfolio of Efe Ahworegba, a Cybersecurity track student at Bowie State University. Supplemental instructor, IT security intern, and founder of PadiSave.">
+  <meta property="og:title" content="Efe Ahworegba | Cybersecurity student and fintech founder">
+  <meta property="og:description" content="Cybersecurity student at Bowie State University. Projects, resume, and a chatbot that answers questions about my background.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#1633E6">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Apply the saved (or system) theme before first paint to avoid a flash -->
+  <script>
+    (function () {
+      var theme = null;
+      try { theme = localStorage.getItem("theme"); } catch (e) {}
+      if (theme !== "light" && theme !== "dark") {
+        theme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="mark" href="#home" aria-label="Efe Ahworegba, back to top">EA</a>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-tools">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HOME -->
+    <section id="home" class="hero" aria-labelledby="hero-name">
+      <div class="wrap hero-inner">
+        <h1 class="hero-name" id="hero-name"><span>Efe</span><span>Ahworegba</span></h1>
+
+        <div class="hero-foot">
+          <div class="hero-copy">
+            <p class="statement"><span class="redact">Cybersecurity student who teaches network defense, secures enterprise identities, and builds financial access for underserved communities.</span></p>
+            <p class="hero-meta">B.S. Computer Technology, Cybersecurity Track<br>Bowie State University, expected December 2027</p>
+            <div class="actions">
+              <a class="btn btn-primary" href="assets/Efe_Ahworegba_Resume.pdf" download>Download resume</a>
+              <a class="btn btn-quiet" href="#projects">See projects</a>
+            </div>
+          </div>
+
+          <figure class="hero-qr">
+            <img src="assets/qr.svg" width="148" height="148" alt="QR code that opens this website">
+            <figcaption>Scan to open this site on your phone</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="wrap section-grid">
+        <h2 class="section-title" id="about-title">About</h2>
+
+        <div class="section-body">
+          <p class="lead">I'm a Computer Technology student on the Cybersecurity track at Bowie State University, with a 4.00 GPA and an expected graduation in December 2027.</p>
+          <p>I spend my time on three things. I teach network security and lab skills as a Supplemental Instructor. I work on enterprise identity and IT operations, from a summer as an IT Security Intern at Molson Coors to my current role shadowing IT engineers at Del Cor Technologies. And I build financial tools for underserved communities, including PadiSave, a fintech platform I founded, and financial literacy outreach with the Interledger Foundation.</p>
+
+          <h3>Experience</h3>
+          <ol class="jobs">
+            <li class="job">
+              <p class="job-when">Dec 2025 &ndash; Present</p>
+              <div class="job-main">
+                <h4>Supplemental Instructor, Cybersecurity</h4>
+                <p class="job-org">Bowie State University, Bowie, MD</p>
+                <ul>
+                  <li>Provide 20 hours of weekly instruction and lab support in intrusion prevention, threat detection, and network security using Linux, Windows Server, and network-monitoring tools.</li>
+                  <li>Guide students through Wireshark analysis, vulnerability identification, Active Directory security, system hardening, and network forensics, contributing to a 14% increase in average test scores.</li>
+                </ul>
+              </div>
+            </li>
+            <li class="job">
+              <p class="job-when">Aug 2026 &ndash; Present</p>
+              <div class="job-main">
+                <h4>IT Solutions Consulting Shadow</h4>
+                <p class="job-org">Del Cor Technologies, Silver Spring, MD</p>
+                <ul>
+                  <li>Shadow IT engineers during on-site and remote service operations, gaining exposure to technical troubleshooting, client support, and incident triage.</li>
+                  <li>Assist with developing standardized dispatch plans and response scenarios for common system malfunctions and service requests.</li>
+                  <li>Review internal audit findings and observe the development of corrective recommendations for operational and security deficiencies.</li>
+                  <li>Create remote-service scenario guides outlining troubleshooting, escalation, and resolution procedures.</li>
+                </ul>
+              </div>
+            </li>
+            <li class="job">
+              <p class="job-when">May 2026 &ndash; Aug 2026</p>
+              <div class="job-main">
+                <h4>IT Security Intern</h4>
+                <p class="job-org">Molson Coors Beverage Company, Milwaukee, WI</p>
+                <ul>
+                  <li>Developed a password blacklist with 900+ terms to strengthen enterprise password security.</li>
+                  <li>Supported SAP account debugging to improve secure user access.</li>
+                  <li>Reviewed and remediated 16,000+ Active Directory service accounts to improve identity management and reduce licensing costs.</li>
+                  <li>Collaborated with IT Security teams on enterprise identity and access management initiatives.</li>
+                </ul>
+              </div>
+            </li>
+            <li class="job">
+              <p class="job-when">Sep 2024 &ndash; Feb 2025</p>
+              <div class="job-main">
+                <h4>Apprentice IT Administrator</h4>
+                <p class="job-org">My Prestige Healthcare, Laurel, MD</p>
+                <ul>
+                  <li>Oversaw on-site IT engineer dispatch plans, creating pre-defined response scenarios for common malfunctions and service call types.</li>
+                  <li>Reviewed deficiencies found in internal audits and suggested remedies.</li>
+                  <li>Created remote-service interaction manuals that define appropriate triage.</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+
+          <h3>Education</h3>
+          <div class="edu">
+            <h4>Bowie State University, Bowie, MD</h4>
+            <p class="edu-degree">B.S. in Computer Technology, Cybersecurity Track. GPA 4.00. Expected December 2027.</p>
+            <dl class="facts">
+              <div><dt>Honors</dt><dd>Bowie State Honors Scholar, Dean's List, TMCF Scholar, Maryland Delegate Scholar, Procter &amp; Gamble Scholar</dd></div>
+              <div><dt>Coursework</dt><dd>Database Management &amp; Development, Linux OS, Client OS, Network Security, Methods of Intrusion Prevention and Detection</dd></div>
+            </dl>
+          </div>
+
+          <h3>Skills</h3>
+          <dl class="facts skills">
+            <div><dt>Security</dt><dd>Network forensics, intrusion detection, Wireshark, Nessus, Nmap</dd></div>
+            <div><dt>Systems and cloud</dt><dd>Active Directory, Windows Server, Linux, Windows, Azure, AWS</dd></div>
+            <div><dt>Programming and data</dt><dd>Python, Java, SQL</dd></div>
+            <div><dt>Focus areas</dt><dd>Ethical and financial technology applications</dd></div>
+            <div><dt>Communication</dt><dd>Technical instruction, presenting to leadership, pitching, writing procedure guides</dd></div>
+          </dl>
+
+          <h3>Leadership and service</h3>
+          <ul class="entries">
+            <li><strong>Management Leadership for Tomorrow (MLT), Career Prep Fellow.</strong> Selective 18-month leadership program for high-achieving, diverse talent in business and technical excellence.</li>
+            <li><strong>Interledger Impact Team, Student Lead.</strong> Partner with the Interledger Foundation to travel to HBCUs teaching financial literacy and open payments.</li>
+            <li><strong>Women in Computer Science, AI/ML Research Cluster.</strong> Conducted AI/ML research under faculty and senior student mentorship.</li>
+            <li><strong>Bowie State Honors Program, Community Service Organizer.</strong> Led a campus-wide toiletries drive supporting women's shelters in the DMV area.</li>
+            <li><strong>Executive Leadership Council (ELC) Scholar.</strong> Selected for demonstrated leadership, academic excellence, and career potential in business and technology.</li>
+            <li><strong>Breakthrough Tech, AI Fellow.</strong></li>
+          </ul>
+
+          <h3>Presentations and conferences</h3>
+          <ul class="entries">
+            <li><strong>Interledger Foundation, Mexico City, Mexico.</strong> Invited to present Bowie State research and Interledger initiatives to global technology leadership, and engaged with the CTO on ethical payments innovation.</li>
+            <li><strong>Thurgood Marshall College Fund Leadership Institute, Invited Scholar.</strong> Selected to represent Bowie State University at TMCF's national leadership and innovation convening.</li>
+            <li><strong>Management Leadership for Tomorrow Tech Trek, California.</strong> Invited participant in MLT's technology immersion experience connecting students with industry leaders and emerging tech spaces.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="wrap section-grid">
+        <h2 class="section-title" id="projects-title">Projects</h2>
+
+        <div class="section-body">
+          <ul class="projects">
+            <li class="project">
+              <div class="project-head">
+                <h3>PadiSave</h3>
+                <p class="project-role">Founder</p>
+              </div>
+              <p>A financial inclusion and credit platform. I designed an open payments fintech solution that builds savings history, trust scores, and access for underserved communities.</p>
+              <p class="project-tags">Fintech, open payments, financial inclusion</p>
+              <a class="text-link" data-link="repo:padisave" href="https://github.com/">View on GitHub</a>
+            </li>
+            <li class="project">
+              <div class="project-head">
+                <h3>Enterprise Multi-VM Network</h3>
+                <p class="project-role">VHA EAS simulation</p>
+              </div>
+              <p>A 6-machine Windows and Ubuntu enterprise environment with AD DS, DNS/DHCP, network segmentation, and system hardening.</p>
+              <p class="project-tags">Windows Server, Ubuntu, Active Directory, DNS/DHCP, segmentation, hardening</p>
+              <a class="text-link" data-link="repo:multivm" href="https://github.com/">View on GitHub</a>
+            </li>
+            <li class="project">
+              <div class="project-head">
+                <h3>Molson Coors &times; TMCF Innovation Case Competition</h3>
+                <p class="project-role">2nd place</p>
+              </div>
+              <p>Presented a tech solution in a national Molson Coors and Thurgood Marshall College Fund challenge, recognized for innovation and problem-solving.</p>
+            </li>
+            <li class="project">
+              <div class="project-head">
+                <h3>Bulldog Pitch Competition</h3>
+                <p class="project-role">Finalist</p>
+              </div>
+              <p>Selected to present PadiSave in Bowie State's Bulldog Pitch Competition against graduate student teams.</p>
+            </li>
+          </ul>
+
+          <p class="more"><a class="text-link" data-link="github" href="https://github.com/">See all my repositories on GitHub</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="section" aria-labelledby="resume-title">
+      <div class="wrap section-grid">
+        <h2 class="section-title" id="resume-title">Resume</h2>
+
+        <div class="section-body resume-layout">
+          <a class="resume-preview" href="assets/Efe_Ahworegba_Resume.pdf" target="_blank" rel="noopener">
+            <img src="assets/resume-preview.png" width="1105" height="1430" loading="lazy"
+                 alt="Page 1 of Efe Ahworegba's resume, showing education, technical skills, work experience, and projects. Select to open the full PDF.">
+          </a>
+
+          <div class="resume-side">
+            <p>Two pages, PDF. It covers education, technical skills, work experience, projects, leadership, and conferences.</p>
+            <div class="actions">
+              <a class="btn btn-primary" href="assets/Efe_Ahworegba_Resume.pdf" download>Download PDF</a>
+              <a class="btn btn-quiet" href="assets/Efe_Ahworegba_Resume.pdf" target="_blank" rel="noopener">View in new tab</a>
+            </div>
+
+            <figure class="qr-card">
+              <img src="assets/qr.svg" width="148" height="148" alt="QR code that opens this website" loading="lazy">
+              <figcaption>Scan to open this site on your phone. The same code is printed on my resume.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="wrap section-grid">
+        <h2 class="section-title" id="contact-title">Contact</h2>
+
+        <div class="section-body">
+          <p class="lead">Have a role, project, or question in mind? Send a message and I'll reply by email.</p>
+
+          <div class="contact-grid">
+            <form id="contact-form" novalidate>
+              <div class="field">
+                <label for="cf-name">Name</label>
+                <input id="cf-name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="cf-email">Email</label>
+                <input id="cf-email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="cf-message">Message</label>
+                <textarea id="cf-message" name="message" rows="6" required></textarea>
+              </div>
+              <!-- Spam trap: real visitors never see or fill this in -->
+              <div class="hp" aria-hidden="true">
+                <label for="cf-gotcha">Leave this field empty</label>
+                <input id="cf-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+              </div>
+              <button class="btn btn-primary" id="cf-submit" type="submit">Send message</button>
+              <p class="form-status" id="cf-status" role="status" aria-live="polite"></p>
+            </form>
+
+            <dl class="direct">
+              <div><dt>Email</dt><dd><a href="mailto:efeaedu@gmail.com">efeaedu@gmail.com</a></dd></div>
+              <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/efe-a-b9727723b" target="_blank" rel="noopener">linkedin.com/in/efe-a-b9727723b</a></dd></div>
+              <div><dt>GitHub</dt><dd><a data-link="github" href="https://github.com/" target="_blank" rel="noopener">github.com</a></dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>&copy; <span id="year">2026</span> Efe Ahworegba</p>
+      <p>Built with HTML, CSS, and JavaScript. <a data-link="source" href="https://github.com/" target="_blank" rel="noopener">Source code on GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/knowledge.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>
